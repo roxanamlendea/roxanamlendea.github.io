@@ -2,6 +2,6 @@
 
 My Personal CV made with 'HTML', 'CSS' and pure 'JS'. 😊
 
-## Live Preview
+## 🎬 Live Preview
 
 [roxanamlendea.github.io](https://roxanamlendea.github.io/)
