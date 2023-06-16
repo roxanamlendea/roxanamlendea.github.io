@@ -2,21 +2,26 @@ function showHome() {
   var page = document.getElementById("home");
   page.style.display = "block";
   hideSkills();
-  hideKnownLanguages();
+  hideLanguages();
 }
 
 function showSkills() {
   var page = document.getElementById("skills");
   page.style.display = "block";
   hideHome();
-  hideKnownLanguages();
+  hideLanguages();
 }
 
-function showKnownLanguages() {
+function showLanguages() {
   var page = document.getElementById("languages");
   page.style.display = "block";
   hideHome();
   hideSkills();
+}
+
+function showProjects() {
+  var page = document.getElementById("projects", page);
+  page.style.display = "block";
 }
 
 function hideHome() {
@@ -29,7 +34,7 @@ function hideSkills() {
   page.style.display = "none";
 }
 
-function hideKnownLanguages() {
+function hideLanguages() {
   var page = document.getElementById("languages");
   page.style.display = "none";
 }
