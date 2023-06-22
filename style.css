@@ -17,12 +17,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-.header-wrapper h1 {
-  margin: 0 0 5px 0;
-}
-.header-wrapper h2 {
-  margin: 0;
+  margin: 5px 5px 5px 5px;
 }
 #my-picture {
   width: 108;
@@ -33,7 +28,17 @@ body {
   border: 4px solid white;
 }
 #header-info {
-  padding: 10px;
+  padding: 0 0 0 15px;
+}
+#header-info * {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#header-info h1 {
+  color: white;
+}
+#header-info h2 {
+  color: rgb(223, 223, 223);
 }
 .page {
   display: none;
@@ -53,12 +58,16 @@ body {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
 }
+#side-menu > section h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(71, 71, 71);
+}
 #main {
   flex: 1;
   padding: 10px 10px 5px 5px;
 }
 header {
-  background: linear-gradient(45deg, #0798ab, transparent);
+  background: linear-gradient(60deg, #036470, transparent);
 }
 h2 {
   color: #0073b1;
@@ -73,7 +82,7 @@ h2 {
 #top-menu-bar {
   margin: 0;
   text-align: center;
-  background-color: #0798ab;
+  background-color: #2f4749;
   color: #fff;
 }
 #top-menu-bar li {
@@ -94,8 +103,29 @@ h2 {
   color: #fff;
 }
 #top-menu-bar a.active {
-  background-color: #05798899;
+  background-color: #1e778199;
 }
 #top-menu-bar a:hover {
-  background-color: #057988;
+  background-color: #1e778199;
+}
+.footer-container {
+  padding: 10px 10px 8px 10px;
+  background-color: #2f4749;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 5px;
+}
+.footer-container * {
+  color: white;
+  text-decoration: none;
+  margin: 0 2px 0 2px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+form {
+  font-family: Arial, Helvetica, sans-serif;
+}
+form :placeholder-shown {
+  font-style: italic;
 }
