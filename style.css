@@ -81,7 +81,10 @@ h2 {
 .favorite {
   font-weight: bold;
 }
-
+#skills li span {
+  color: grey;
+  font-weight: 100;
+}
 #top-menu-bar {
   margin: 0;
   text-align: center;
