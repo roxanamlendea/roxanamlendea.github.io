@@ -13,6 +13,22 @@ body {
   display: flex;
   flex-direction: row;
 }
+#side-menu {
+  padding: 10px 5px 5px 10px;
+}
+#side-menu > section {
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+#main {
+  flex: 1;
+  padding: 10px 10px 5px 5px;
+}
+header {
+  background: linear-gradient(50deg, #036470, transparent);
+}
 #header-wrapper {
   display: flex;
   flex-direction: row;
@@ -48,29 +64,9 @@ body {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
 }
-
-#side-menu {
-  padding: 10px 5px 5px 10px;
-}
-#side-menu > section {
-  margin-bottom: 10px;
-  padding: 10px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
-}
-#side-menu > section h2 {
+h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(71, 71, 71);
-}
-#main {
-  flex: 1;
-  padding: 10px 10px 5px 5px;
-}
-header {
-  background: linear-gradient(60deg, #036470, transparent);
-}
-h2 {
-  color: #0073b1;
 }
 #job-title {
   font-weight: bold;
@@ -84,6 +80,8 @@ h2 {
   text-align: center;
   background-color: #2f4749;
   color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
 }
 #top-menu-bar li {
   display: inline-block;
@@ -122,6 +120,7 @@ h2 {
   text-decoration: none;
   margin: 0 2px 0 2px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
 }
 form {
   font-family: Arial, Helvetica, sans-serif;
