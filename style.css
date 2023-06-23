@@ -22,6 +22,12 @@ body {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
 }
+form {
+  font-family: Arial, Helvetica, sans-serif;
+}
+form :placeholder-shown {
+  font-style: italic;
+}
 #main {
   flex: 1;
   padding: 10px 10px 5px 5px;
@@ -121,10 +127,4 @@ h2 {
   margin: 0 2px 0 2px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
-}
-form {
-  font-family: Arial, Helvetica, sans-serif;
-}
-form :placeholder-shown {
-  font-style: italic;
 }

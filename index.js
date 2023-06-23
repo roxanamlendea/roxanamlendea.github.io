@@ -2,25 +2,32 @@ var activePage = "home";
 
 // utilities functions
 
+function $(selector) {
+  return document.querySelector(selector);
+}
+
 function hide(id) {
   console.info("hide %o element", id);
-  document.getElementById(id).style.display = "none";
+  $(`#${id}`).style.display = "none";
+}
+
+function show(id) {
+  var page = $("#" + id);
+  console.info("show %o", id, page);
+  page.style.display = "block";
 }
 
 function showPage(id) {
-  var oldLink = document.querySelector(
-    `#top-menu-bar a[data-page=${activePage}]`
-  );
+  var oldLink = document.$(`#top-menu-bar a[data-page=${activePage}]`);
   oldLink.classList.remove("active");
 
   hide(activePage);
 
-  var link = document.querySelector(`#top-menu-bar a[data-page=${id}]`);
+  var link = document.$(`#top-menu-bar a[data-page=${id}]`);
   link.classList.add("active");
 
-  var page = document.getElementById(id);
-  console.info("show %o", id, page);
-  page.style.display = "block";
+  show(id);
+
   activePage = id;
 }
 
