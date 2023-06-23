@@ -44,12 +44,21 @@ function clickOnMenu(e) {
   }
 }
 
+function sortByEndorsements(a, b) {
+  console.info(a, b);
+  return b.endorsements - a.endorsements;
+}
+
+function sortByName(a, b) {
+  console.info(a, b);
+  return a.name.localeCompare(b.name);
+}
+
 function showSkills(skills) {
+  skills.sort(sortByEndorsements);
   var htmlSkills = skills.map(function (skill) {
-    // <li class="favorite">HTML</li>
-    console.info("skill", skill);
     var cls = skill.favorite ? "favorite" : "";
-    return `<li class="${cls}">${skill.name}<span> - ${skill.endorsement}</span></li>`;
+    return `<li class="${cls}">${skill.name}<span> - ${skill.endorsements}</span></li>`;
   });
   var ul = $("#skills ul");
   ul.innerHTML = htmlSkills.join("");
