@@ -57,10 +57,12 @@ header {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 #header-info h1 {
-  color: #2f4749;
+  color: #243638;
+  font-weight: 750;
 }
 #header-info h2 {
-  color: rgb(58, 58, 58);
+  color: rgb(63, 63, 63);
+  font-weight: 650;
 }
 .page {
   display: none;
