@@ -52,6 +52,7 @@ header {
   transition: 1s;
 }
 #my-picture img:hover {
+  border-radius: 50% 0;
   border-color: #243638;
 }
 #header-info {
