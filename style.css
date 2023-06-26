@@ -135,11 +135,6 @@ h2 {
   margin: 0 2px 0 2px;
   font-weight: 400;
 }
-/* footer li {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-} */
 footer a {
   text-decoration: none;
   padding: 5px 15px 5px 15px;
@@ -148,9 +143,6 @@ footer a {
   display: inline-block;
   border-radius: 0.3em;
   transition: 1s;
-}
-footer a.active {
-  background-color: #1e778199;
 }
 footer a:hover {
   background-color: #1e778199;
