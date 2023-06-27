@@ -2,5 +2,7 @@
   { "name": "HTML", "endorsements": 12, "favorite": true },
   { "name": "css", "endorsements": 16 },
   { "name": "JS", "endorsements": 22, "favorite": true },
-  { "name": "Excel", "endorsements": 11 }
+  { "name": "Excel", "endorsements": 11 },
+  { "name": "Postman API", "endorsements": 10, "favorite": true },
+  { "name": "PG Admin", "endorsements": 4 }
 ]
