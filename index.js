@@ -67,9 +67,7 @@ function showSkills(skills) {
 
 function loadSkills() {
   const response = fetch("skills.json");
-  const loaded = response.then((r) => {
-    return r.json();
-  });
+  const loaded = response.then((r) => r.json());
   loaded.then(showSkills);
 }
 
