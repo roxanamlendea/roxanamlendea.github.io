@@ -45,12 +45,10 @@ function clickOnMenu(e) {
 }
 
 function sortByEndorsements(a, b) {
-  console.info(a, b);
   return b.endorsements - a.endorsements;
 }
 
 function sortByName(a, b) {
-  console.info(a, b);
   return a.name.localeCompare(b.name);
 }
 
@@ -58,7 +56,10 @@ function showSkills(skills) {
   skills.sort(sortByEndorsements);
   const htmlSkills = skills.map((skill) => {
     const cls = skill.favorite ? "favorite" : "";
-    return `<li class="${cls}">${skill.name}<span> - ${skill.endorsements}</span></li>`;
+    return `<li class="${cls}">
+    ${skill.name}
+    <span> - ${skill.endorsements}</span>
+    </li>`;
   });
   const ul = $("#skills ul");
   ul.innerHTML = htmlSkills.join("");
@@ -69,9 +70,7 @@ function loadSkills() {
   const loaded = response.then((r) => {
     return r.json();
   });
-  loaded.then((skills) => {
-    showSkills(skills);
-  });
+  loaded.then(showSkills);
 }
 
 // start our code

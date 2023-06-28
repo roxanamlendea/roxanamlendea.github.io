@@ -16,8 +16,6 @@ var el = document.getElementById("el");
 
 name = "roxana";
 
-
-
 function printInfo() {
   console.log(typeof skills, skills, age);
   console.info("my name", name);
@@ -37,4 +35,4 @@ fVariable();
 
 console.info("t1", typeof printInfo);
 console.info("t2", typeof fVariable);
-console.info("t4")
+console.info("t4", typeof f1Variable);
